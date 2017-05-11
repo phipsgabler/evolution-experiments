@@ -8,15 +8,6 @@ export runga
 # produce either copy, mutation, or crossover with other randomly chosen expression
 # remove another randomly chosen expression
 
-# operations preserve closedness
-# mutations: introduce new abstraction before subexpression
-#            remove unused abstraction
-#            insert operand/operator with bound variable, or identity
-#            remove operand/operator which does not contain an application
-#            mutation rate 0.01
-# crossover: exchange sub-combinators; crossover rate 0.6
-# normalize between runs
-
 function runga(fitness::Function,
                create_entity::Function;
                population_size::Int = 10,
